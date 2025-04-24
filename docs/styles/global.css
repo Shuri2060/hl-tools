@@ -1,0 +1,28 @@
+* {
+    font-family: monospace;
+}
+
+body {
+    background-color: #0f1a1f;
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+/* @media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .main-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} */

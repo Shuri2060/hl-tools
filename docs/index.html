@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="wg.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#0f1a1f"/>
+    <meta name="description" content="HL Tools by Shuri2060"/>
+    
+    <link rel="stylesheet" href="master.css">
+    <title>HL Tools by Shuri2060</title>
+    <script src="https://unpkg.com/@msgpack/msgpack@3.0.0-beta2"></script>  <!-- https://github.com/msgpack/msgpack-javascript/tree/v3.0.0-beta2?tab=readme-ov-file#cdn--unpkgcom -->
+    <script type="module" src="index.js?version=20250414"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h1>HL Tools by Shuri2060</h1>
+        </div>
+        <div class="navbar-right">
+            <label class="toggle">
+                <input type="checkbox">
+                <div class="slider">
+                    <span class="text-on">Mainnet</span>
+                    <span class="text-off">Testnet</span>
+                </div>
+            </label>
+            <button id="connectButton" class="blue">Connect</button>
+            <span id="addressDisplay" class="address"></span>
+        </div>
+    </nav>
+    <main>
+        <div class="main-controls">
+            <label class="toggle">
+                <input type="checkbox" checked>
+                <div class="slider">
+                    <span class="text-on">Big</span>
+                    <span class="text-off">Small</span>
+                </div>
+            </label>
+            <button id="switchButton">Switch Blocks</button>
+        </div>
+    </main>
+</body>
+</html>

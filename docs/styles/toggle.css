@@ -1,0 +1,84 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 36px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.toggle .slider {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 1000px;
+    transition: .2s;
+    background-color: #d35a71;
+}
+
+.toggle .slider:before {
+    position: absolute;
+    content: "";
+    left: 4px;
+    bottom: 4px;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    transition: .2s;
+    background-color: #ffffff;  /* TODO: HL logo */
+}
+
+/* ON */
+.toggle .text-on {
+    position: absolute;
+    text-align: center;
+    left: 10px;
+    transition: 0s;
+    font-size: 16px;
+    color: #000000;
+}
+
+.toggle input:checked + .slider {
+    background-color: #50d2c1;
+}
+
+.toggle input:checked + .slider .text-on {
+    visibility: visible;
+}
+
+.toggle input:checked + .slider .text-off {
+    visibility: hidden;
+}
+
+/*  */
+
+.toggle input:checked + .slider:before {
+    transform: translateX(84px);
+}
+
+/* OFF */
+.toggle .text-off {
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    transition: 0s;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.toggle input:not(:checked) + .slider .text-off {
+    visibility: visible;
+}
+
+.toggle input:not(:checked) + .slider .text-on {
+    visibility: hidden;
+}
